@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: rapiddeal
   datasource:
     url: ${JDBC_DATABASE_URL:jdbc:postgresql://localhost:5432/rapiddeal_db}
     username: ${JDBC_DATABASE_USERNAME:creditmusic}
