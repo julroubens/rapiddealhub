@@ -10,7 +10,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.SequenceGenerator;
-import java.time.LocalTime;
+import java.time.LocalDate;
 import java.time.OffsetDateTime;
 import lombok.Getter;
 import lombok.Setter;
@@ -46,7 +46,7 @@ public class Transaction {
     private Double dept;
 
     @Column
-    private LocalTime transactionDate;
+    private LocalDate transactionDate;
 
     @Column
     private String paymentMethod;

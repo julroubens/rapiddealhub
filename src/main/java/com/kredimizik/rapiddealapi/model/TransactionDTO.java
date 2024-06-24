@@ -1,9 +1,8 @@
 package com.kredimizik.rapiddealapi.model;
 
-import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import java.time.LocalTime;
+import java.time.LocalDate;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,8 +17,7 @@ public class TransactionDTO {
 
     private Double dept;
 
-    @Schema(type = "string", example = "18:30")
-    private LocalTime transactionDate;
+    private LocalDate transactionDate;
 
     @Size(max = 255)
     private String paymentMethod;

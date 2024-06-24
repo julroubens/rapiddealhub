@@ -11,7 +11,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.SequenceGenerator;
-import java.time.LocalTime;
+import java.time.LocalDate;
 import java.time.OffsetDateTime;
 import java.util.Set;
 import lombok.Getter;
@@ -45,10 +45,10 @@ public class Shipment {
     private String trackingNumber;
 
     @Column
-    private LocalTime shimentDate;
+    private LocalDate shimentDate;
 
     @Column
-    private LocalTime deliveryDate;
+    private LocalDate deliveryDate;
 
     @Column
     private String status;

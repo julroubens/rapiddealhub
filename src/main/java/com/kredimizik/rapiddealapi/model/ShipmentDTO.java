@@ -1,8 +1,7 @@
 package com.kredimizik.rapiddealapi.model;
 
-import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.Size;
-import java.time.LocalTime;
+import java.time.LocalDate;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,11 +15,9 @@ public class ShipmentDTO {
     @Size(max = 255)
     private String trackingNumber;
 
-    @Schema(type = "string", example = "18:30")
-    private LocalTime shimentDate;
+    private LocalDate shimentDate;
 
-    @Schema(type = "string", example = "18:30")
-    private LocalTime deliveryDate;
+    private LocalDate deliveryDate;
 
     @Size(max = 255)
     private String status;

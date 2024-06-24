@@ -2,7 +2,7 @@ spring:
   application:
     name: rapiddeal
   datasource:
-    url: ${JDBC_DATABASE_URL:jdbc:postgresql://localhost:5432/rapiddeal_db}
+    url: ${JDBC_DATABASE_URL:jdbc:postgresql://localhost:5432/rapiddealapi_db}
     username: ${JDBC_DATABASE_USERNAME:creditmusic}
     password: ${JDBC_DATABASE_PASSWORD:Funbook@2005}
     hikari:

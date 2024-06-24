@@ -10,7 +10,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.SequenceGenerator;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.time.OffsetDateTime;
 import lombok.Getter;
 import lombok.Setter;
@@ -43,7 +43,7 @@ public class TrackingEvent {
     private String eventType;
 
     @Column
-    private LocalDateTime eventDate;
+    private LocalDate eventDate;
 
     @Column
     private String location;
